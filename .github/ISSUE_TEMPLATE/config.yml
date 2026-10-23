@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security concern privately
+    url: https://github.com/luxxfolio/luxxwallet-feedback/security/advisories/new
+    about: Suspected vulnerabilities belong here, not in public issues. Never include wallet secrets or backup files.
+  - name: General help
+    url: https://luxxfolio.com/contact/
+    about: Contact Luxxfolio for general help. Do not include wallet secrets or backup files.
