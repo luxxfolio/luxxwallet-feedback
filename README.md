@@ -14,7 +14,7 @@ You can read reports without an account. A GitHub account is needed to submit or
 
 Search existing reports first. If the same problem is already listed, add relevant details there instead of opening another issue.
 
-Describe what you did, what you expected, and what happened. Include the affected area, coin/network, browser and operating system. Use a disposable wallet if you need to reproduce the problem.
+Start with a title and a short description. For a bug, tell us what went wrong and what you expected. For an idea, tell us what you would change and how it would help. Steps, coin/network, device/browser and a redacted screenshot are optional; add them in the same box if helpful. We will ask for more detail if needed and handle classification.
 
 **Issues and comments are public.** Never post recovery words, passwords, private keys, account recovery codes, authentication links or tokens, or backup files—even encrypted ones. Do not post wallet addresses, transaction IDs, balances, personal contact details, full page URLs, console dumps or network captures. If you add a screenshot, crop or cover account details, wallet names, addresses, balances, QR codes and anything private first.
 

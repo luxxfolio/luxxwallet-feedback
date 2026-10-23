@@ -1,107 +1,18 @@
 name: Bug report
-description: Report something in LuxxWallet that is not working as expected.
-title: "[Bug] "
+description: Tell us something is not working.
 labels: [bug, needs-triage]
 body:
   - type: markdown
     attributes:
       value: |
-        This report will be public. Search existing reports first.
-
-        Never include recovery words, passwords, private keys, recovery codes, tokens, authentication links, or backup files—even encrypted ones. Do not include wallet addresses, transaction IDs, balances, personal contact details, full URLs, console dumps or network captures.
-
-        For a suspected security flaw, use the [private security form](https://github.com/luxxfolio/luxxwallet-feedback/security/advisories/new).
-  - type: dropdown
-    id: area
-    attributes:
-      label: Affected area
-      options:
-        - Wallet setup or unlock
-        - Backup and recovery
-        - Balances and activity
-        - Receiving coins
-        - Sending coins
-        - LuxxPool connection
-        - Accounts
-        - Display or accessibility
-        - Other or unsure
-    validations:
-      required: true
-  - type: dropdown
-    id: coin_network
-    attributes:
-      label: Coin and network
-      description: Select each affected network. Do not enter an address or transaction ID.
-      multiple: true
-      options:
-        - Not coin-specific
-        - LTC mainnet
-        - Litecoin testnet
-        - DOGE mainnet
-        - BELLS mainnet
-        - LKY mainnet
-        - PEP mainnet
-        - JKC mainnet
-        - DINGO mainnet
-        - SHIC mainnet
-        - CRC mainnet
-        - TRMP mainnet
-        - Other or unsure
-    validations:
-      required: true
-  - type: input
-    id: environment
-    attributes:
-      label: Browser and operating system
-      description: Include versions if known. Leave out device names and other identifying details.
-      placeholder: "Safari on iPhone (iOS), or Chrome on Windows"
-    validations:
-      required: true
-  - type: input
-    id: release
-    attributes:
-      label: Public release version
-      description: If a version is shown in the wallet, enter it here. Otherwise leave this blank or write unknown.
-    validations:
-      required: false
+        This post is public. Never share recovery words, passwords, keys, recovery codes, tokens, backup files or raw logs. Keep personal and wallet details out, including screenshots.
+        
+        Security concern? Use the [private security form](https://github.com/luxxfolio/luxxwallet-feedback/security/advisories/new).
   - type: textarea
-    id: steps
+    id: description
     attributes:
-      label: Steps to reproduce
-      description: Use a disposable wallet and describe the actions. Use placeholders instead of real wallet or account details.
-      placeholder: |
-        1. Open ...
-        2. Select ...
-        3. See ...
+      label: What happened?
+      description: Tell us what went wrong and what you expected. Steps, the coin, your device/browser, or a screenshot are optional.
+      placeholder: "For example: I switched wallets, but the balance still showed the previous wallet."
     validations:
       required: true
-  - type: textarea
-    id: expected
-    attributes:
-      label: Expected behavior
-      description: What should have happened?
-    validations:
-      required: true
-  - type: textarea
-    id: actual
-    attributes:
-      label: Actual behavior
-      description: What happened instead? Include an error message only after removing private data. Do not paste raw logs.
-    validations:
-      required: true
-  - type: textarea
-    id: screenshot
-    attributes:
-      label: Redacted screenshot (optional)
-      description: Only attach a cropped or redacted screenshot. Remove wallet names, account details, addresses, balances, QR codes, secrets and full URLs. Never attach a wallet backup or network capture.
-    validations:
-      required: false
-  - type: checkboxes
-    id: privacy
-    attributes:
-      label: Before submitting
-      options:
-        - label: I understand this report is public and have removed wallet secrets, backup files, private financial information and personal details.
-          required: true
-        - label: This is a general bug report, not a suspected security vulnerability.
-          required: true
