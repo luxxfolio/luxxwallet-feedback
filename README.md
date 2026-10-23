@@ -24,11 +24,11 @@ Suspected security flaws belong in the [private security reporting flow](SECURIT
 
 | Status | Meaning |
 | --- | --- |
-| New | Received and awaiting review. This does not mean the bug has been confirmed. |
-| Confirmed | We reproduced the problem or have enough evidence to confirm it. |
-| In progress | A fix is being worked on. |
-| Fixed | The fix has been released and checked. The closing update identifies the public release version or deployment date. |
+| `needs-triage` | Received and awaiting review. This does not mean the bug has been confirmed. |
+| `confirmed` | We reproduced the problem or have enough evidence to confirm it. |
+| `in-progress` | A fix is being worked on. |
+| `fixed` | The fix has been released and checked. The closing update identifies the public release version or deployment date. |
 
-Some reports need more information or duplicate an existing report. Those can be closed with an explanation and, for duplicates, a link to the original. A merged code change alone does not make a report fixed; reports stay open until the deployed result is checked.
+Reports that need more information use `needs-info`; repeated reports use `duplicate`. Those can be closed with an explanation and, for duplicates, a link to the original. A merged code change alone does not make a report fixed; reports stay open until the deployed result is checked.
 
 Feature requests can be reviewed and discussed here. Opening or confirming a request is not a commitment to build it or a delivery date.
